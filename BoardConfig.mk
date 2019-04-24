@@ -7,13 +7,15 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
+
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 ALLOW_MISSING_DEPENDENCIES=true
 
@@ -28,8 +30,8 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/beyond2/prebuilt/Image.gz-kernel
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPRI17C001RU
+TARGET_PREBUILT_KERNEL := device/samsung/beyond1lte/prebuilt/Image.gz-kernel
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPRI28B001RU
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
@@ -82,3 +84,7 @@ TW_INCLUDE_NTFS_3G := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_USE_NEW_MINADBD := true
+TW_USE_TOOLBOX := true
+TW_EXCLUDE_TWRPAPP := true
+TW_NO_LEGACY_PROPS := true
+BOARD_SUPPRESS_SECURE_ERASE := true
