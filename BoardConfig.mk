@@ -30,7 +30,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/beyond1lte/prebuilt/Image.gz-kernel
+TARGET_PREBUILT_KERNEL := device/samsung/beyond1lte/prebuilt/Image
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPRI28B001RU
 
 # Platform
