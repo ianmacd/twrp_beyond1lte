@@ -88,6 +88,6 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
 TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-TW_DEVICE_VERSION := 1_ianmacd
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond1lte/prebuilt/recovery_dtbo
+TW_DEVICE_VERSION := 2_ianmacd
