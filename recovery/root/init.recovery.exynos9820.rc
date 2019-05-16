@@ -1,4 +1,11 @@
+# Fix linker warnings when binaries are executed while /system is mounted.
+#
+service ldconfigtxt /sbin/touch /etc/ld.config.txt
+    oneshot
+    seclabel u:r:recovery:s0
+
 on init
     write /proc/sys/kernel/hung_task_timeout_secs 0
+    export LD_CONFIG_FILE /etc/ld.config.txt
 
 on boot
