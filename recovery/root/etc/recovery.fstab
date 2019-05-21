@@ -4,10 +4,11 @@
 /data           ext4	/dev/block/platform/13d60000.ufs/by-name/userdata
 /efs		ext4	/dev/block/platform/13d60000.ufs/by-name/efs	flags=backup=1;display="EFS"
 /product	ext4	/dev/block/platform/13d60000.ufs/by-name/product flags=backup=1;display="Product"
+/product_image	emmc	/dev/block/platform/13d60000.ufs/by-name/product flags=backup=1;flashimg;display="Product Image"
 /system         ext4    /dev/block/platform/13d60000.ufs/by-name/system
-/system_image   emmc    /dev/block/platform/13d60000.ufs/by-name/system
-/vendor		ext4	/dev/block/platform/13d60000.ufs/by-name/vendor	flags=backup=1
-/vendor_image	emmc	/dev/block/platform/13d60000.ufs/by-name/vendor	flags=backup=1;display="Carrier Configs";flashimg
+/system_image   emmc    /dev/block/platform/13d60000.ufs/by-name/system flags=backup=1;flashimg
+/vendor		ext4	/dev/block/platform/13d60000.ufs/by-name/vendor flags=backup=1
+/vendor_image	emmc	/dev/block/platform/13d60000.ufs/by-name/vendor	flags=backup=1;flashimg
 
 /recovery       emmc    /dev/block/platform/13d60000.ufs/by-name/recovery
 
