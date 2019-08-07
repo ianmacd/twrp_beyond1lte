@@ -1,4 +1,4 @@
-# Version 3.3.1-4_ianmacd.
+# Version 3.3.1-5_ianmacd.
 
 # Architecture
 TARGET_ARCH := arm64
@@ -51,7 +51,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
-#BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS := 
+#BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS :=
 ifeq ($(BOARD_AVB_ENABLE), true)
    BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
    BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
@@ -86,4 +86,4 @@ TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond1lte/prebuilt/recovery_dtbo
-PLATFORM_SECURITY_PATCH := 2019-06-30
+PLATFORM_SECURITY_PATCH := 2019-07-31
