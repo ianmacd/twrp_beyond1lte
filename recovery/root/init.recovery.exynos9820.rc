@@ -4,6 +4,9 @@ service ldconfigtxt /sbin/touch /etc/ld.config.txt
     oneshot
     seclabel u:r:recovery:s0
 
+on fs
+    export ANDROID_ROOT /system_root
+
 on init
     write /proc/sys/kernel/hung_task_timeout_secs 0
     export LD_CONFIG_FILE /etc/ld.config.txt
