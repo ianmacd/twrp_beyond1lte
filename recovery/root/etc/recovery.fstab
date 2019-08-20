@@ -5,11 +5,10 @@
 /efs		ext4	/dev/block/platform/13d60000.ufs/by-name/efs flags=backup=1;display="EFS"
 /product	ext4	/dev/block/platform/13d60000.ufs/by-name/product flags=backup=1;display="Product"
 /product_image	emmc	/dev/block/platform/13d60000.ufs/by-name/product flags=backup=1;flashimg;display="Product Image"
+/system_root    ext4    /dev/block/platform/13d60000.ufs/by-name/system flags=display="System";backup=1
 /system_image   emmc    /dev/block/platform/13d60000.ufs/by-name/system flags=backup=1;flashimg
-/system_root    ext4    /dev/block/platform/13d60000.ufs/by-name/system flags=display="System";backup=0
 /vendor		ext4	/dev/block/platform/13d60000.ufs/by-name/vendor flags=backup=1
 /vendor_image	emmc	/dev/block/platform/13d60000.ufs/by-name/vendor	flags=backup=1;flashimg
-
 
 /recovery       emmc    /dev/block/platform/13d60000.ufs/by-name/recovery
 
