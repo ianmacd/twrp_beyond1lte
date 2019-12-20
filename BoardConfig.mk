@@ -44,11 +44,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Crypto
-#TARGET_HW_DISK_ENCRYPTION := true
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE := true
-
 # TWRP specific build flags
 RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
