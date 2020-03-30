@@ -1,4 +1,4 @@
-# Version 3.3.1-102_ianmacd.
+# Version 3.3.1-103_ianmacd.
 
 # Architecture
 TARGET_ARCH := arm64
@@ -67,4 +67,4 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond1lte/prebuilt/recovery_dtbo
 PLATFORM_VERSION := 10
-PLATFORM_SECURITY_PATCH := 2020-02-01
+PLATFORM_SECURITY_PATCH := 2020-04-01
