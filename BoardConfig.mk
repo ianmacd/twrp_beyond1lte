@@ -1,4 +1,6 @@
-# Version 3.4.0-2_ianmacd.
+# Version 3.4.0-3_ianmacd.
+
+DEVICE_PATH := device/samsung/beyond1lte
 
 # Architecture
 TARGET_ARCH := arm64
@@ -32,7 +34,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := device/samsung/beyond1lte/prebuilt/Image
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1 --board SRPRI28B008RU
 
 # Platform
@@ -65,6 +67,6 @@ TW_EXCLUDE_TWRPAPP := true
 TW_NO_LEGACY_PROPS := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond1lte/prebuilt/recovery_dtbo
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
 PLATFORM_VERSION := 10
-PLATFORM_SECURITY_PATCH := 2020-08-01
+PLATFORM_SECURITY_PATCH := 2020-09-01
